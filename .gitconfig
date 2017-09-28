@@ -1,0 +1,36 @@
+[user]
+	email = n.beernink@oxilion.nl
+	name = Niek Beernink
+
+[push]
+	default = matching
+
+[branch]
+	autosetuprebase = always
+
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	up = pull --rebase --autostash
+
+[color]
+	ui = true
+
+[color "diff"]
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	meta = 227
+	commit = 227 bold
+	whitespace = red reverse
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	newNormal = green bold
+	oldHighlight = red bold 52
+	newHighlight = green bold 22
+
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+
+[diff-so-fancy]
+	stripLeadingSymbols = false
