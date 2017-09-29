@@ -51,3 +51,20 @@ alias ll="ls -la"
 alias diff=colordiff
 alias pdsh='pdsh -t 2'
 alias goaccess='goaccess -p ~/.goaccessrc'
+
+#source credentials for functions below
+
+[ -f ~/.credentials ] && source ~/.credentials
+
+# SpamExperts API-calls
+function delivery_check() {
+        curl "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_get_destination&domain=$1"
+}
+
+function set_delivery() {
+        curl "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_set_destination&domain=$1&destination=$2"
+}
+
+function clear_callout_cache() {
+        curl -s -k "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_clear_callout_cache&domain=$1"
+}
