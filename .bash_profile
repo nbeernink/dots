@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #source bash-completion if it exists
-[ -f /usr/local/etc/bash_completion ] && source /usr/local/etc/bash_completion
+[ -f /usr/local/share/bash-completion/bash_completion ] && source /usr/local/share/bash-completion/bash_completion
 
 #source git-prompt and completion
 [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ] && source /usr/local/etc/bash_completion.d/git-prompt.sh
