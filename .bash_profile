@@ -19,9 +19,6 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 #shorten paths to max 3
 export PROMPT_DIRTRIM=3
 
-#Colors in ls output
-export CLICOLOR=1
-
 #set my favorite editor
 export EDITOR='vim'
 
@@ -50,6 +47,7 @@ export PACKER_LOG_PATH=packer.log
 #aliases
 alias pwgen="pwgen 12"
 alias rm="rm -i"
+alias ls="ls --color=auto"
 alias ll="ls -la"
 alias diff=colordiff
 alias pdsh='pdsh -t 2'
