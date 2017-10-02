@@ -28,6 +28,7 @@ if brew ls --versions > /dev/null ; then
 		goaccess \
 		grep --with-default-names \
 		gzip \
+		ipcalc \
 		lastpass-cli \
 		less \
 		mtr \
@@ -36,6 +37,7 @@ if brew ls --versions > /dev/null ; then
 		openssh \
 		parallel \
 		pv \
+		pwgen \
 		python3 \
 		rsync \
 		screen \
