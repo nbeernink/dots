@@ -34,7 +34,6 @@ if brew ls --versions > /dev/null ; then
 		mtr \
 		ncdu \
 		nmap \
-		openssh \
 		parallel \
 		pv \
 		pwgen \
