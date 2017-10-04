@@ -36,6 +36,7 @@ if brew ls --versions > /dev/null ; then
 	brew install parallel
 	brew install pv
 	brew install pwgen
+	brew install python
 	brew install python3
 	brew install rsync
 	brew install screen
