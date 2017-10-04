@@ -38,6 +38,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on
+set backspace=2 "make backspace work normal on OSX
 set t_Co=256
 set showcmd
 set encoding=utf-8
