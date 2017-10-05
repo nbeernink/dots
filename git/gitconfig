@@ -1,6 +1,5 @@
-[user]
-	email = n.beernink@oxilion.nl
-	name = Niek Beernink
+[include]
+	path = ~/.gitconfig.local
 
 [push]
 	default = matching
