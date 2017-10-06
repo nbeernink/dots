@@ -97,6 +97,9 @@ nmap ga <Plug>(EasyAlign)
 "Syntastic config
 let g:syntastic_puppet_puppetlint_args = "--no-documentation-check --no-80chars-check --no-140chars-check --no-autoloader_layout-check"
 let g:syntastic_javascript_checkers = ['jslint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height=5
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
