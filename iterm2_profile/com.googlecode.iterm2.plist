@@ -1280,7 +1280,7 @@ Clear Buffer</string>
 			<key>Disable Printing</key>
 			<true/>
 			<key>Disable Smcup Rmcup</key>
-			<true/>
+			<false/>
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
@@ -1756,7 +1756,7 @@ Clear Buffer</string>
 	<key>RunJobsInServers</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
-	<true/>
+	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
