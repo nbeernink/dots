@@ -35,27 +35,16 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-syntax on
-"color settings
-set t_Co=256
 colorscheme molokai
 
 set encoding=utf-8
-set backspace=2 "make backspace work normal on OSX
-set showcmd
-set ruler "show line number and position
-set showmode
 set gdefault
-set hlsearch
 set ignorecase
-set incsearch
 set showmatch
 set smartcase
-set cursorline
 set textwidth=79
 set wrap
 set formatoptions=qrn1
-set wildmenu
 set wildmode=longest:full,full
 
 set number relativenumber
