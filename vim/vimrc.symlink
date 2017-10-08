@@ -19,8 +19,6 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'junegunn/vim-easy-align'
-Plugin 'chriskempson/base16-vim'
-Plugin 'rakr/vim-one'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -38,31 +36,34 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on
-set backspace=2 "make backspace work normal on OSX
+"color settings
 set t_Co=256
-set showcmd
+colorscheme molokai
+
 set encoding=utf-8
-set formatoptions=qrn1
+set backspace=2 "make backspace work normal on OSX
+set showcmd
+set ruler "show line number and position
+set showmode
 set gdefault
 set hlsearch
 set ignorecase
 set incsearch
 set showmatch
-set showmode
 set smartcase
+set cursorline
 set textwidth=79
 set wrap
+set formatoptions=qrn1
 set wildmenu
 set wildmode=longest:full,full
-set cursorline
-colorscheme molokai
 
-" set number relativenumber
-" augroup numbertoggle
-"	autocmd!
-"	autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-"	autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-" augroup END
+set number relativenumber
+augroup numbertoggle
+      autocmd!
+      autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+      autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 "leaders
 
@@ -106,6 +107,10 @@ let g:syntastic_check_on_wq = 0
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+"netrw explorer options
+let g:netrw_liststyle=3
+let g:netrw_banner=0
 
 "Highlight tab characters, trailing spaces and whitespace red
 highlight TrailWhitespace ctermbg=red guibg=red
