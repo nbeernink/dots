@@ -46,6 +46,8 @@ set textwidth=79
 set wrap
 set formatoptions=qrn1
 set wildmode=longest:full,full
+set noundofile "don't use an undo file
+set nobackup "don't make backups
 
 set number relativenumber
 augroup numbertoggle
