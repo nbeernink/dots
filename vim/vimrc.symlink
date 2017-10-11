@@ -44,6 +44,7 @@ set showmatch
 set smartcase
 set textwidth=79
 set wrap
+set path=$PWD/**
 set formatoptions=qrn1
 set wildmode=longest:full,full
 set noundofile "don't use an undo file
@@ -66,7 +67,9 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>T :Tabularize /=><CR>
 "spellcheck in english
 nnoremap <leader>S :set spell spellang=en_us<CR>
-nnoremap <Leader>n :set invnumber number?<CR>
+"toggle relative line numbers
+nnoremap <Leader>n :set relativenumber!<CR> :set number!<CR>
+"toggle for Gundo tree-based undo
 nnoremap <Leader>u :GundoToggle<CR>
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
