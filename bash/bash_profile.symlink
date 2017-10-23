@@ -27,6 +27,7 @@ export HISTFILESIZE=1000000
 export HISTSIZE=1000000
 export HISTTIMEFORMAT='%h %e %T '
 export HISTIGNORE='ls:ll:bg:fg:history'
+export HISTCONTROL=ignoredups
 
 #colors in man pages
 export LESS_TERMCAP_mb=$'\E[01;31m'
