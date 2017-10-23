@@ -53,6 +53,8 @@ alias ll="ls -la"
 alias diff=colordiff
 alias pdsh='pdsh -t 2'
 alias goaccess='goaccess -p ~/.goaccessrc'
+alias ack='ack --pager="less -FRSX"'
+
 
 #source credentials for functions below
 
