@@ -1766,9 +1766,9 @@ Maximize Active Pane</string>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/n.beernink/git/dots/iterm2_profile</string>
 	<key>PromptOnQuit</key>
-	<false/>
-	<key>QuitWhenAllWindowsClosed</key>
 	<true/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<false/>
 	<key>RunJobsInServers</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
