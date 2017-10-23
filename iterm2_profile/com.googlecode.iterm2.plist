@@ -1721,7 +1721,7 @@ Maximize Active Pane</string>
 		<string>0000</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
-	<false/>
+	<true/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
