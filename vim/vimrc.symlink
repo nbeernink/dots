@@ -9,16 +9,18 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Bundle 'christoomey/vim-sort-motion'
-Bundle 'wakatime/vim-wakatime'
 Bundle 'sjl/gundo.vim.git'
-Plugin 'VundleVim/Vundle.vim'
+Bundle 'wakatime/vim-wakatime'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elzr/vim-json'
 Plugin 'godlygeek/tabular'
+Plugin 'haya14busa/incsearch.vim'
+Plugin 'junegunn/vim-easy-align'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
-Plugin 'junegunn/vim-easy-align'
+Plugin 'VundleVim/Vundle.vim'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -82,6 +84,11 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" incsearch maps
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
 
 "XML settings
 " packadd! matchit
