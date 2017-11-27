@@ -44,6 +44,7 @@ if brew ls --versions > /dev/null ; then
 	brew install ssh-copy-id
 	brew install swaks
 	brew install tig
+	brew install tldr
 	brew install tree
 	brew install unrar
 	brew install unzip
