@@ -38,6 +38,7 @@ if brew ls --versions > /dev/null ; then
 	brew install pwgen
 	brew install python
 	brew install python3
+	brew install ranger
 	brew install rsync
 	brew install screen
 	brew install shellcheck
