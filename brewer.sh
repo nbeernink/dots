@@ -27,6 +27,7 @@ if brew ls --versions > /dev/null ; then
 	brew install goaccess
 	brew install grep --with-default-names
 	brew install gzip
+	brew install httpie
 	brew install ipcalc
 	brew install lastpass-cli
 	brew install less
