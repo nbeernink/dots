@@ -46,16 +46,17 @@ export PACKER_LOG=1
 export PACKER_LOG_PATH=packer.log
 
 #aliases
+alias ack='ack --pager="less -FRSX"'
+alias diff=colordiff
+alias gb="cd \$(git root)"
+alias goaccess='goaccess -p ~/.goaccessrc'
+alias http='http -h --style monokai'
+alias ll="ls -la"
+alias ls="ls --color=auto"
+alias pdsh='pdsh -t 2'
 alias pwgen="pwgen 12"
 alias rm="rm -i"
-alias ls="ls --color=auto"
-alias ll="ls -la"
-alias diff=colordiff
-alias pdsh='pdsh -t 2'
-alias goaccess='goaccess -p ~/.goaccessrc'
-alias ack='ack --pager="less -FRSX"'
 alias tree="tree -a -I '.git|.DS_Store'"
-alias gb="cd \$(git root)"
 
 
 #source credentials for functions below
