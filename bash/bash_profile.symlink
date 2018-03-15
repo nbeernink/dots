@@ -53,7 +53,7 @@ alias ack='ack --pager="less -FRSX"'
 alias diff=colordiff
 alias gb="cd \$(git root)"
 alias goaccess='goaccess -p ~/.goaccessrc'
-alias http='http -h --style monokai'
+alias http='http --all --follow --max-redirects=5 --headers --style monokai'
 alias ll="ls -la"
 alias ls="ls --color=auto"
 alias pdsh='pdsh -t 2'
