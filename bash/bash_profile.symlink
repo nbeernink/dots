@@ -45,6 +45,9 @@ export LESS='-R'
 export PACKER_LOG=1
 export PACKER_LOG_PATH=packer.log
 
+#homebrew settings
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+
 #aliases
 alias ack='ack --pager="less -FRSX"'
 alias diff=colordiff
