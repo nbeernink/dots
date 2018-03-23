@@ -48,6 +48,9 @@ export PACKER_LOG_PATH=packer.log
 #homebrew settings
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
+#prevent lpass-cli from exiting
+export LPASS_AGENT_TIMEOUT=0
+
 #aliases
 alias ack='ack --pager="less -FRSX"'
 alias diff=colordiff
