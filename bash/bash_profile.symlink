@@ -71,11 +71,11 @@ alias tree="tree -a -I '.git|.DS_Store'"
 
 # SpamExperts API-calls
 function delivery_check() {
-        curl "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_get_destination&domain=$1"
+        curl -s "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_get_destination&domain=$1"
 }
 
 function set_delivery() {
-        curl "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_set_destination&domain=$1&destination=$2"
+        curl -s "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_set_destination&domain=$1&destination=$2"
 }
 
 function clear_callout_cache() {
