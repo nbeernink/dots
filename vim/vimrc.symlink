@@ -119,3 +119,6 @@ let g:netrw_banner=0
 highlight TrailWhitespace ctermbg=red guibg=red
 match TrailWhitespace /\s\+$\| \+\ze\t/
 autocmd Syntax * syn match TrailWhitespace /\s\+$\| \+\ze\t/
+
+"Set syntax to shell for commands coming from ^X^E
+autocmd BufRead,BufNewFile /var/*/bash-fc.* set syntax=sh
