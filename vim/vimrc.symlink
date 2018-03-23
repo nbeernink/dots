@@ -38,6 +38,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on
+set backspace=2
 colorscheme molokai
 
 set encoding=utf-8
