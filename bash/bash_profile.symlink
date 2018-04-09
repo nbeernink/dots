@@ -53,6 +53,7 @@ export LPASS_AGENT_TIMEOUT=0
 
 #aliases
 alias ack='ack --pager="less -FRSX"'
+alias ag='ag --pager="less -FRSX"'
 alias diff=colordiff
 alias gb="cd \$(git root)"
 alias goaccess='goaccess -p ~/.goaccessrc'
