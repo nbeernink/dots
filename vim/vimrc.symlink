@@ -20,7 +20,12 @@ Plugin 'pearofducks/ansible-vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'klen/python-mode'
+Plugin 'vim-airline/vim-airline'
+Plugin 'chrisbra/csv.vim'
+Plugin 'mileszs/ack.vim'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
