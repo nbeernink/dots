@@ -127,3 +127,6 @@ autocmd Syntax * syn match TrailWhitespace /\s\+$\| \+\ze\t/
 
 "Set syntax to shell for commands coming from ^X^E
 autocmd BufRead,BufNewFile /var/*/bash-fc.* set syntax=sh
+
+"Reread vimrc on save
+autocmd bufwritepost .vimrc source %
