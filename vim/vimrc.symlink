@@ -14,15 +14,11 @@ Bundle 'wakatime/vim-wakatime'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elzr/vim-json'
 Plugin 'godlygeek/tabular'
-Plugin 'haya14busa/incsearch.vim'
-Plugin 'junegunn/vim-easy-align'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'rodjek/vim-puppet'
-Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'klen/python-mode'
 Plugin 'vim-airline/vim-airline'
 Plugin 'chrisbra/csv.vim'
 Plugin 'mileszs/ack.vim'
@@ -86,35 +82,9 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
 
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
 
-" incsearch maps
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
 
-"XML settings
-" packadd! matchit
-"let g:xml_syntax_folding=1
-"autocmd Syntax xml setlocal foldmethod=syntax
-"autocmd Syntax xml normal zR
-
-"Syntastic config
-let g:syntastic_puppet_puppetlint_args = "--no-documentation-check --no-80chars-check --no-140chars-check --no-autoloader_layout-check"
-let g:syntastic_javascript_checkers = ['jslint']
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height=5
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 "netrw explorer options
 let g:netrw_liststyle=3
