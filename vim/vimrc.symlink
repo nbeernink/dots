@@ -16,12 +16,15 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elzr/vim-json'
 Plugin 'godlygeek/tabular'
 Plugin 'mileszs/ack.vim'
+Plugin 'nvie/vim-flake8'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'w0rp/ale'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -62,6 +65,18 @@ augroup numbertoggle
       autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
+" ale settngs
+let g:ale_list_window_size = 5
+
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+" YouCompleteMe jump to definition
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"python with virtualenv support
+let g:ycm_python_binary_path = 'python'
+let g:autopep8_select="E501"
+
 "leaders
 
 "unfold all folds
@@ -84,7 +99,15 @@ set listchars=tab:▸\ ,eol:¬
 
 
 
-
+"airline config
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+let g:airline_skip_empty_sections = 1
+let g:airline#extensions#ale#enabled = 1
+set ttimeoutlen=10 "remove delay when switching norm/vis modes
+set noshowmode "hide default mode indicator in favor of vim-airline
 
 "netrw explorer options
 let g:netrw_liststyle=3
