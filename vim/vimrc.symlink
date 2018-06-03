@@ -11,17 +11,17 @@ call vundle#begin()
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'sjl/gundo.vim.git'
 Bundle 'wakatime/vim-wakatime'
+Plugin 'chrisbra/csv.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elzr/vim-json'
 Plugin 'godlygeek/tabular'
+Plugin 'mileszs/ack.vim'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'rodjek/vim-puppet'
-Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
-Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
-Plugin 'chrisbra/csv.vim'
-Plugin 'mileszs/ack.vim'
+Plugin 'VundleVim/Vundle.vim'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
