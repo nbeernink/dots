@@ -99,6 +99,10 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
+" point ack.vim to ag if it's installed
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 
 "airline config
