@@ -15,6 +15,7 @@ export PS1='\[\e[01;32m\][\u\[\e[34;1m\] \w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[3
 
 export PATH="/usr/local/bin:/usr/local/sbin:~/.bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export SHELL="/usr/local/bin/bash"
 
 #shorten paths to max 2
 export PROMPT_DIRTRIM=2
@@ -65,6 +66,7 @@ alias pwgen="pwgen 12"
 alias rm="rm -i"
 alias tree="tree -a -I '.git|.DS_Store'"
 
+export PYTHONSTARTUP=~/.pyrc
 
 #source credentials for functions below
 
