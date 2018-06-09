@@ -8,7 +8,7 @@ export LC_ALL="en_US.UTF-8"
 [ -f /usr/local/git/contrib/completion/git-completion.bash ]  && source /usr/local/git/contrib/completion/git-completion.bash
 
 #prompt setup
-export PS1='\[\e[01;32m\][\u@\[\e[34;1m\]osx \w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[34;1m\]]\$\[\e[m\] '
+export PS1='\[\e[01;32m\][\u\[\e[34;1m\] \w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[34;1m\]]\$\[\e[m\] '
 
 #PS1 prompt without git completion
 #export PS1='\[\e[01;32m\][\u@\[\e[34;1m\]osx \w\[\e[1;35m\]\[\e[34;1m\]]\$\[\e[m\] '
