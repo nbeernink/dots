@@ -44,7 +44,6 @@ filetype plugin indent on    " required
 
 set termguicolors
 syntax on
-set backspace=2
 colorscheme molokai
 
 set encoding=utf-8
