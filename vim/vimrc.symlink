@@ -100,6 +100,9 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
+"set fugitive status command and increase height
+nmap <leader>gs :Gstatus<CR><C-w>20+
+
 " point ack.vim to ag if it's installed
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
