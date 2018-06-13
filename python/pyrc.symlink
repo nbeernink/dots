@@ -1,0 +1,14 @@
+# This makes python autocomplete work inside pipenv
+# https://github.com/pypa/pipenv/issues/497#issuecomment-387444794
+import sys, os
+
+if (sys.version_info[0] == 2) or ('PIPENV_ACTIVE' in os.environ):
+  try:
+    import readline
+  except ImportError:
+    print("Module readline not available.")
+  else:
+    import rlcompleter
+    readline.parse_and_bind("tab: complete")
+    del readline, rlcompleter
+del sys, os
