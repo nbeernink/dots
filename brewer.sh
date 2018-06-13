@@ -4,10 +4,13 @@ if brew ls --versions > /dev/null ; then
 	brew update
 	brew upgrade
 	brew install ack
+	brew install ansible
 	brew install bash
 	brew install bash-completion2
+	brew install cmake
 	brew install colordiff
 	brew install coreutils
+	brew install ctags
 	brew install curl
 	brew install diff-so-fancy
 	brew install diffutils
@@ -28,6 +31,7 @@ if brew ls --versions > /dev/null ; then
 	brew install grep --with-default-names
 	brew install gzip
 	brew install httpie
+	brew install imapsync
 	brew install ipcalc
 	brew install lastpass-cli
 	brew install less
@@ -35,6 +39,7 @@ if brew ls --versions > /dev/null ; then
 	brew install ncdu
 	brew install nmap
 	brew install parallel
+	brew install pdsh
 	brew install pv
 	brew install pwgen
 	brew install python
@@ -43,8 +48,10 @@ if brew ls --versions > /dev/null ; then
 	brew install rsync
 	brew install screen
 	brew install shellcheck
+	brew install sleepwatcher
 	brew install ssh-copy-id
 	brew install swaks
+	brew install the_silver_searcher
 	brew install tig
 	brew install tldr
 	brew install tree
