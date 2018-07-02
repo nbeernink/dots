@@ -13,6 +13,7 @@
 	root = !pwd
 	st = status
 	co = checkout
+	ctags = !.git/hooks/ctags
 
 [color]
 	ui = true
@@ -39,3 +40,5 @@
 	stripLeadingSymbols = false
 [status]
 	showUntrackedFiles = no
+[init]
+	templatedir = ~/git/dots/git/git_template
