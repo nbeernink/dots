@@ -112,6 +112,15 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+"switch windows with direction keys
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"more natural splits
+set splitbelow
+set splitright
 
 "airline config
 if !exists('g:airline_symbols')
