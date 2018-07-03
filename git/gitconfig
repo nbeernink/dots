@@ -9,7 +9,7 @@
 
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	up = pull --rebase --autostash
+	up = !git pull --rebase --autostash && git submodule update
 	root = !pwd
 	st = status
 	co = checkout
