@@ -93,8 +93,7 @@ nnoremap <leader>T :Tabularize /=><CR>
 "spellcheck in english
 nnoremap <leader>S :set spell spellang=en_us<CR>
 "toggle relative line numbers
-nnoremap <Leader>n :set relativenumber!<CR> :set number!<CR> :GitGutterToggle<CR>
-set signcolumn=yes "always show gitgutter column
+nnoremap <Leader>n :set relativenumber!<CR> :set number!<CR>
 "toggle for Gundo tree-based undo
 nnoremap <Leader>u :GundoToggle<CR>
 let g:gundo_prefer_python3 = 1
