@@ -62,6 +62,7 @@ set wildmode=longest:full,full
 set noundofile "don't use an undo file
 set nobackup "don't make backups
 set ttyfast "make vim scroll faster
+set lazyredraw
 set updatetime=100 "faster update time for gitgutter
 
 set number relativenumber
