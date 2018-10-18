@@ -125,3 +125,6 @@ install_dotfiles () {
 }
 setup_gitconfig
 install_dotfiles
+
+# Install vundle if it's not
+test -e ~/.vim/bundle/Vundle.vim || git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
