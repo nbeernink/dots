@@ -107,6 +107,7 @@ set listchars=tab:▸\ ,eol:¬
 
 "set fugitive status command and increase height
 nmap <leader>gs :Gstatus<CR><C-w>20+
+set diffopt=vertical
 
 " point ack.vim to ag if it's installed
 if executable('ag')
