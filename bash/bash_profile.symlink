@@ -4,8 +4,8 @@ export LC_ALL="en_US.UTF-8"
 [ -f /usr/local/share/bash-completion/bash_completion ] && source /usr/local/share/bash-completion/bash_completion
 
 #source git-prompt and completion
-[ -f /usr/local/etc/bash_completion.d/git-prompt.sh ] && source /usr/local/etc/bash_completion.d/git-prompt.sh
-[ -f /usr/local/git/contrib/completion/git-completion.bash ]  && source /usr/local/git/contrib/completion/git-completion.bash
+[ -f /usr/share/doc/git/contrib/completion/git-prompt.sh ] && source /usr/share/doc/git/contrib/completion/git-prompt.sh
+[ -f /usr/share/doc/git/contrib/completion/git-completion.bash ]  && source /usr/share/doc/git/contrib/completion/git-completion.bash
 
 #prompt setup
 export PS1='\[\e[01;32m\][\u\[\e[34;1m\] \w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[34;1m\]]\$\[\e[m\] '
@@ -13,9 +13,8 @@ export PS1='\[\e[01;32m\][\u\[\e[34;1m\] \w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[3
 #PS1 prompt without git completion
 #export PS1='\[\e[01;32m\][\u@\[\e[34;1m\]osx \w\[\e[1;35m\]\[\e[34;1m\]]\$\[\e[m\] '
 
-export PATH="/usr/local/bin:/usr/local/sbin:~/.bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-export SHELL="/usr/local/bin/bash"
+# add local and python bin dirs to path
+export PATH="$HOME/.bin/:$HOME/.local/bin:$PATH"
 
 #shorten paths to max 2
 export PROMPT_DIRTRIM=2
@@ -46,9 +45,6 @@ export LESS='-R'
 export PACKER_LOG=1
 export PACKER_LOG_PATH=packer.log
 
-#homebrew settings
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
-
 #prevent lpass-cli from exiting
 export LPASS_AGENT_TIMEOUT=0
 
@@ -68,19 +64,5 @@ alias tree="tree -a -I '.git|.DS_Store'"
 
 export PYTHONSTARTUP=~/.pyrc
 
-#source credentials for functions below
-
+#source credentials
 [ -f ~/.credentials ] && source ~/.credentials
-
-# SpamExperts API-calls
-function delivery_check() {
-        curl -s "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_get_destination&domain=$1"
-}
-
-function set_delivery() {
-        curl -s "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_set_destination&domain=$1&destination=$2"
-}
-
-function clear_callout_cache() {
-        curl -s -k "https://$SE_USER:$SE_PASS@$SE_HOST/cgi-bin/api?call=api_clear_callout_cache&domain=$1"
-}
