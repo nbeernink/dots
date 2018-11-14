@@ -1,0 +1,16 @@
+! "Enabled modi"
+rofi.modi: drun,ssh
+! "Window width"
+rofi.width: 80
+! "Number of lines"
+rofi.lines: 3
+! "Border width"
+rofi.bw: 1
+! "Location on screen"
+rofi.location: 2
+! "Padding"
+rofi.padding: 5
+! "Set the modi to combine in combi mode"
+rofi.combi-modi:drun,ssh
+! "New style theme file"
+rofi.theme: android_notification

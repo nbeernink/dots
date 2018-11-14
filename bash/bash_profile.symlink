@@ -14,7 +14,10 @@ export PS1='\[\e[01;32m\][\u\[\e[34;1m\] \w\[\e[1;35m\]$(__git_ps1 "(%s)")\[\e[3
 #export PS1='\[\e[01;32m\][\u@\[\e[34;1m\]osx \w\[\e[1;35m\]\[\e[34;1m\]]\$\[\e[m\] '
 
 # add local and python bin dirs to path
-export PATH="$HOME/.bin/:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.bin/:$HOME/.local/bin/:$HOME/bin/:$PATH"
+
+#manage SSH-keys
+eval "$( keychain --eval --quick --quiet --noask --agents ssh id_rsa )"
 
 #shorten paths to max 2
 export PROMPT_DIRTRIM=2
@@ -37,6 +40,7 @@ export LESS_TERMCAP_se=$'\E[0m' # end the info box
 export LESS_TERMCAP_so=$'\E[01;42;30m' # begin the info box
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
+export GROFF_NO_SGR=1
 
 #less with more colors
 export LESS='-R'
@@ -51,6 +55,7 @@ export LPASS_AGENT_TIMEOUT=0
 #aliases
 alias ack='ack --pager="less -FRSX"'
 alias ag='ag --pager="less -FRSX"'
+alias cp='cp -i'
 alias diff=colordiff
 alias gb="cd \$(git root)"
 alias goaccess='goaccess -p ~/.goaccessrc'
