@@ -232,7 +232,10 @@ for_window [class="Spotify"] floating enable; move scratchpad;
 for_window [class="keybase"] floating enable; move scratchpad;
 
 #startup
-exec_always --no-startup-id compton
+#Fix audio hissing https://www.reddit.com/r/thinkpad/comments/8j8208/audio_crackling_through_both_headphone_jack_and/
+exec_always --no-startup-id sudo hda-verb /dev/snd/hwC0D0 0x1d SET_PIN_WIDGET_CONTROL 0x0
+
+exec --no-startup-id compton
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id google-chrome
