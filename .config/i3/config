@@ -182,10 +182,10 @@ bindsym $mod+shift+Delete mode "$mode_system"
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Pulse Audio controls
-exec --no-startup-id pactl set-sink-volume 0 80% # starting volume = 80%
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10% && killall -SIGUSR1 i3status #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10% && killall -SIGUSR1 i3status #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && killall -SIGUSR1 i3status # mute sound
+exec --no-startup-id pactl set-sink-volume 1 80% # starting volume = 80%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +10% && killall -SIGUSR1 i3status #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -10% && killall -SIGUSR1 i3status #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle && killall -SIGUSR1 i3status # mute sound
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
