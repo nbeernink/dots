@@ -151,5 +151,8 @@ autocmd Syntax * syn match TrailWhitespace /\s\+$\| \+\ze\t/
 "Set syntax to shell for commands coming from ^X^E
 autocmd BufRead,BufNewFile /var/*/bash-fc.* set syntax=sh
 
+"Set indent for yaml files
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 "Reread vimrc on save
 autocmd bufwritepost .vimrc source %
