@@ -242,7 +242,7 @@ exec --no-startup-id google-chrome
 exec --no-startup-id spotify
 exec --no-startup-id setxkbmap -variant altgr-intl -layout us -model pc101 -option caps:escape
 exec --no-startup-id redshift
-exec --no-startup-id unclutter -grab
+exec --no-startup-id unclutter --timeout 5
 exec --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
 exec_always --no-startup-id xautolock -detectsleep -time 3 -locker 'i3exit lock' -corners '+-00' -cornerdelay 1 -cornerredelay 10&
 #exec --no-startup-id grep -q open /proc/acpi/button/lid/LID/state && nmcli radio wifi on
