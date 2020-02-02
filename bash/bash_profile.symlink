@@ -45,10 +45,6 @@ export GROFF_NO_SGR=1
 #less with more colors
 export LESS='-R'
 
-#packer settings
-export PACKER_LOG=1
-export PACKER_LOG_PATH=packer.log
-
 #prevent lpass-cli from exiting
 export LPASS_AGENT_TIMEOUT=0
 
@@ -68,6 +64,3 @@ alias rm="rm -i"
 alias tree="tree -a -I '.git|.DS_Store'"
 
 export PYTHONSTARTUP=~/.pyrc
-
-#source credentials
-[ -f ~/.credentials ] && source ~/.credentials
