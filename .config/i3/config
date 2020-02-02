@@ -147,7 +147,7 @@ bindsym $mod+Ctrl+Shift+0 move container to workspace 20
 bindsym $mod+x move workspace to output left
 
 # screenshot
-bindsym Print exec xfce4-screenshooter
+bindsym Print exec flameshot gui
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
