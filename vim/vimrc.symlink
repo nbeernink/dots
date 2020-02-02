@@ -10,7 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'sjl/gundo.vim.git'
-"Bundle 'wakatime/vim-wakatime'
+Bundle 'wakatime/vim-wakatime'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'chrisbra/csv.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
